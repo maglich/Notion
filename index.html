@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Bridle Lenght Calculator</title>
+
+<script type="text/javascript">
+function calculate() {
+var A = parseFloat(document.frmOne.v1.value);
+var B = parseFloat(document.frmOne.h1.value);
+var C = parseFloat(document.frmOne.v2.value);
+var D = parseFloat(document.frmOne.h2.value);
+var X = Math.sqrt((A*A)+(B*B));
+var XX = Math.round(X * 100)/100;
+var Y = Math.sqrt((C*C)+(D*D));
+var YY = Math.round(Y * 100)/100;
+document.frmOne.l1.value = XX;
+document.frmOne.l2.value = YY;
+
+return false;
+}
+</script>
+
+
+</head>
+<body bgcolor="#49413F">
+<center><b><u><h1>
+<font color="#F88017"> A Simple Bridle Length Calculator
+</h1></u></i></b></center>
+<center>
+<font color="black">
+<img src="http://springknollpress.com/PR/bridle2.png" alt="Bridle Diagram" width="400" eight="300"><p>
+<form name="frmOne" method="post" action=""">
+<h2>
+H1 = <input name="h1" value="" size="5" style="text-align:center; font-size:20px;" type="text"> feet
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+H2 = <input name="h2" value="" size="5" style="text-align:center; font-size:20px;" type="text"> feet <p>
+V1 = <input name="v1" value="" size="5" style="text-align:center; font-size:20px;" type="text"> feet
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+V2 = <input name="v2" value="" size="5" style="text-align:center; font-size:20px;" type="text"> feet <p>
+<font color="red">
+L1 = <input name="l1" value="" size="5" style="text-align:center; font-size:20px;" type="text"> feet
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L2 = <input name="l2" value="" size="5" style="text-align:center; font-size:20px;" type="text"> feet <br>
+<input class="button" name="b1" value="Calculate" onclick="calculate()" type="button" <button style=font-size:20px; "height:30px; width:100px"></button>
+</form>
+</body>
+</html>
